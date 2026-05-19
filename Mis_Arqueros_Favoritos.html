@@ -1,0 +1,138 @@
+<html lang="es">
+    <link rel="shorcut icon" href="Imagenes/Logo Pagina Web.png">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mi TOP 3</title>
+        
+        <style>
+    
+.texto-oculto{
+    display: none;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #14213d;
+}
+            body {font-family: 'Times New Roman', Times, serif; background-color: beige; text-align: center;}
+            .Contenedor-fotos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+            img {
+                width: 300px;
+                height: 320px;
+                border: 5px solid #34495e;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+            btn-volver {display: inline-block; margin-top: 20px; color: #163559;}
+           
+            body {font-family: Arial, Helvetica, sans-serif; text-align: center; background-color: #FAF9F6;}
+            h1 {color: #14213d;}
+            h3 {color: #14213d;}
+         a{
+                text-decoration: none;
+                background-color: #002868;
+                color: antiquewhite;
+                padding: 10px 20px;
+                border-radius: 5px;
+                margin: 10px;
+            }
+         a:hover{background-color: #008c82;}
+
+        </style>
+    </head>
+    <body>
+        <h1>Mi top 3 de Arqueros en el Mundo.</h1>
+        <h3>Estos 3 han sido de los mejores arqueros del mundo y lo mejor, todos tienen una copa del Mundo.<br> 
+        Clickea cualquier imagen para ver mi descripcion de ellos y porque son mi top 3.</h3>
+        <br>
+        <div class="Contenedor-fotos">
+
+   <div class="Contenedor-fotos">
+
+    <div>
+        <img src="Imagenes/Buffon.jpg"
+        alt="Foto Jorge"
+        onclick="mostrarTexto('texto1')">
+
+        <p id="texto1" class="texto-oculto">
+            Buffon fue de los mejores arqueros y<br>
+            para mi, segundo de todos los tiempos<br>
+            Gano un Mundial en 2006 desde el  <br>
+            punto penal la cual quedaria 5-3 <br>
+            a  favor de italia venciendo a <br>
+            la francia de Zinedine Zidane quien <br>
+            fue expulsado, para nadie es extraño <br>
+            que los italianos producen increibles <br>
+            arqueros, pero el era la Excelencia <br>
+            de los arqueros Italianos.
+        </p>
+    </div>
+
+    <div>
+        <img src="Imagenes/Iker.jpg"
+        alt="Foto Sofi"
+        onclick="mostrarTexto('texto2')">
+
+        <p id="texto2" class="texto-oculto">
+            Iker Casillas fue para mi el<br>
+            Mejor arquero de todos los tiempos<br>
+            Gano el Mundials 2010 con España. <br>
+            La jugada que lo hizo famoso fue <br>
+            atajarle una jugada de contra letal<br>
+            a Arjen Riobben en el minuto 62, <br>
+            esta atajada le costo el mundial <br>
+            a paises bajos y por ende, la final <br>
+            seria ganada por España, ya que <br>
+            paises bajos carecia de ataques.
+        </p>
+    </div>
+
+    <div>
+        <img src="Imagenes/Neuer.jpg"
+        alt="Foto Juan"
+        onclick="mostrarTexto('texto3')">
+
+        <p id="texto3" class="texto-oculto">
+            Ayyy, como hablar de este arqueraso,<br>
+            Este aleman para mi es el 3 mejor<br>
+            Arquero de todos los tiempos. <br>
+            Gano el Mundial 2014 con Alemania <br>
+            Se hizo famoso desde siempre, lleva<br>
+            15 años siendo arquero del Bayern y <br>
+            es un arquero muy constante en  <br>
+            su nivel, a sus 40 años todavia <br>
+            es un arquero de Gran alto Nivel, <br>
+            en lo personal, mi arquero favorito. <br>
+        </p>
+    </div>
+
+</div>
+        <br>
+         <a href="Index.html" class="btn-volver">Volver a la Pagina principal.</a>
+         <br>
+         <br>
+         <br>
+         <a href="historia_del_futbol.html" class="btn-volver">Ir a La Historia del Futbol</a>
+    
+    <script>
+
+function mostrarTexto(id){
+
+    let texto = document.getElementById(id);
+
+    if(texto.style.display === "block"){
+        texto.style.display = "none";
+    }
+    else{
+        texto.style.display = "block";
+    }
+
+}
+
+</script> 
+ </body>
+</html>
